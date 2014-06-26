@@ -78,10 +78,6 @@ h3 {
   margin-top: 60px;
 }
 
-.sidebar h3 {
-  margin: 20px 0 10px 0;
-}
-
 .summary > p {
   text-align: center;
 }
@@ -92,11 +88,15 @@ h3 {
 }
 
 
-/* Sidebar left */
+/* Sidebar Left */
 .design-selection {
   position: fixed;
-  top: 0;
+  top: 20px;
   left: 20px;
+}
+
+.design-selection h3 {
+  margin: 0px 0 10px 0;
 }
 
 .design-selection > .select {
@@ -143,16 +143,16 @@ nav > ul > li {
   font-size: 18px;
 }
 
-/* Sidebar right */
+/* Sidebar Archives */
 .design-archives {
   position: fixed;
-  top: 0;
-  right: 10px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .design-archives > .archives {
   opacity: 0.3;
-  display: table-row;
+  margin-right: 20px;
 }
 
 .design-archives > nav {
@@ -160,8 +160,51 @@ nav > ul > li {
   display: table-row;
 }
 
+.design-archives > nav a {
+  font-size: 18px;
+}
+
 .design-archives:hover > .archives,
 .design-archives:hover nav {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.5s ease-in-out;
+     -moz-transition: opacity 0.5s ease-in-out;
+      -ms-transition: opacity 0.5s ease-in-out;
+       -o-transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out;
+}
+
+/* Sidebar Resources */
+.zen-resources {
+  position: fixed;
+  top: 20px;
+  right: 0;
+}
+
+.zen-resources > h3 {
+  margin: 0 0 20px 0;
+}
+
+.zen-resources > .resources {
+  opacity: 0.3;
+  text-align: left;
+}
+
+.zen-resources > ul {
+  opacity: 0;
+  display: table-row;
+}
+
+.zen-resources > ul > li {
+  margin-bottom: 10px;
+}
+
+.zen-resources > ul > li a {
+  font-size: 18px;
+}
+
+.zen-resources:hover > .resources,
+.zen-resources:hover ul {
   opacity: 0.9;
   -webkit-transition: opacity 0.5s ease-in-out;
      -moz-transition: opacity 0.5s ease-in-out;
