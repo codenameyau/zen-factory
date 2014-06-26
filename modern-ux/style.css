@@ -56,22 +56,10 @@ p, a {
 p {
   color: #4c4c4c;
   text-align: justify;
-  opacity: .85;
-  -webkit-transition: opacity 0.3s ease-in-out;
-     -moz-transition: opacity 0.3s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in-out;
-       -o-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
 }
 
 p:hover {
   color: #333333;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-     -moz-transition: opacity 0.3s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in-out;
-       -o-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
 }
 
 a {
@@ -260,4 +248,63 @@ footer {
 footer a {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
+}
+
+
+/* Responsive Tablet */
+@media(max-width: 980px) {
+  /* Components */
+  div > .intro,
+  div > .main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: table;
+    height: 100%;
+  }
+
+  /* Design selection */
+  .design-selection,
+  .design-archives,
+  .zen-resources {
+    position: inherit;
+    width: 100%;
+  }
+
+  .design-selection > nav {
+    position: inherit;
+    background: rgba(0, 0, 0, 0.8);
+    display: table-row;
+    padding: 20px;
+  }
+
+  .design-selection > nav a,
+  .design-selection > nav p {
+    color: #fafafa;
+  }
+
+
+  /* Archives */
+
+
+  /* Resources */
+}
+
+
+/* Responsive Mobile Phone */
+@media(max-width: 580px) {
+  div > .intro,
+  div > .main {
+    width: 90%;
+  }
+
+  h3 {
+    margin-top: 30px;
+  }
+
+  p, a {
+    text-align: left;
+    line-height: 30px;
+    font-size: 18px;
+  }
 }
