@@ -38,7 +38,7 @@ div > .intro {
 /* Global Typography */
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
-  color: #333333;
+  color: #2d2d2d;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
@@ -54,9 +54,24 @@ p, a {
 }
 
 p {
-  color: #666666;
+  color: #4c4c4c;
   text-align: justify;
-  hyphens: manual;
+  opacity: .85;
+  -webkit-transition: opacity 0.3s ease-in-out;
+     -moz-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+       -o-transition: opacity 0.3s ease-in-out;
+          transition: opacity 0.3s ease-in-out;
+}
+
+p:hover {
+  color: #333333;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+     -moz-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+       -o-transition: opacity 0.3s ease-in-out;
+          transition: opacity 0.3s ease-in-out;
 }
 
 a {
@@ -64,7 +79,7 @@ a {
 }
 
 a:hover {
-  color: #14739C;
+  color: #14638C;
 }
 
 /* Individual Typography */
@@ -102,7 +117,7 @@ h3 {
 .design-selection > .select {
   text-align: left;
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 nav > ul {
@@ -147,17 +162,21 @@ nav > ul > li {
 .design-archives {
   position: fixed;
   bottom: 0px;
-  right: 0px;
+  right: 10px;
 }
 
 .design-archives > .archives {
-  opacity: 0.3;
-  margin-right: 20px;
+  opacity: 0.2;
+  margin: 0 20px 0 0;
 }
 
 .design-archives > nav {
   opacity: 0;
   display: table-row;
+}
+
+.design-archives > nav > ul > li{
+  margin-bottom: 0;
 }
 
 .design-archives > nav a {
@@ -178,15 +197,15 @@ nav > ul > li {
 .zen-resources {
   position: fixed;
   top: 20px;
-  right: 0;
+  right: 10px;
 }
 
 .zen-resources > h3 {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .zen-resources > .resources {
-  opacity: 0.3;
+  opacity: 0.2;
   text-align: left;
 }
 
@@ -211,4 +230,34 @@ nav > ul > li {
       -ms-transition: opacity 0.5s ease-in-out;
        -o-transition: opacity 0.5s ease-in-out;
           transition: opacity 0.5s ease-in-out;
+}
+
+/* Requirements */
+div .requirements p:last-child {
+  margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 300;
+}
+
+div .requirements p:last-child a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 30px 0 30px 0;
+  margin: 60px 0 80px 0;
+  letter-spacing: 2px;
+  text-align: center;
+  word-spacing: 15px;
+}
+
+footer a {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
 }
