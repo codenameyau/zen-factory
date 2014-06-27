@@ -31,20 +31,33 @@ p, a {
 }
 
 .content-wrapper {
-  width: 60%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
 
-
 footer {
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
 }
 
 footer > p {
   color: #8c8c8c;
   font-size: 18px;
+}
+
+/* Collection */
+.collection-gallery {
+  display: inline-table;
+}
+
+.collection-item {
+  display: inline;
+  padding: 20px;
+}
+
+.item-name {
+  text-align: center;
 }
 
 /* Responsive */
