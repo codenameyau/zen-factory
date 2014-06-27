@@ -1,6 +1,6 @@
 /* css Zen Garden */
 /* 'Modern UX' by Jorge Yau - https://codenameyau.github.io */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/ */
 
 /* IMPORTANT */
 /* This design is not a template. You may not reproduce it elsewhere without the
@@ -251,7 +251,7 @@ footer a {
 }
 
 
-/* Responsive Tablet */
+/* Responsive: Tablet */
 @media(max-width: 980px) {
   /* Components */
   div > .intro,
@@ -276,7 +276,7 @@ footer a {
   }
 
   .design-selection > .select {
-    background: rgba(90,90,90,0.5);
+    background: rgba(110,110,110,0.5);
     opacity: 0.9;
     text-align: center;
     color: #fafafa;
@@ -347,7 +347,7 @@ footer a {
 }
 
 
-/* Responsive Mobile Phone */
+/* Responsive: Phone */
 @media(max-width: 580px) {
 
   h2 {
