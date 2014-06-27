@@ -1,5 +1,10 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  margin: 60px 0 0 0;
+  margin: 0;
   padding: 0;
   font-family: 'Alegreya Sans', sans-serif;
   color: #444444;
@@ -7,11 +12,16 @@ body {
 }
 
 h1, h2, h3 {
+  font-weight: 300;
   letter-spacing: 2px;
 }
 
-.content-wrapper > h3 {
-  margin-top: 40px;
+h1 {font-size: 35px;}
+h2 {font-size: 30px;}
+h3 {font-size: 25px;}
+
+h2 {
+  margin: 0 0 80px 0;
 }
 
 a {
@@ -24,15 +34,10 @@ a:hover {
   text-decoration: underline;
 }
 
-p, a {
-  font-size: 21px;
+p {
+  font-size: 22px;
   letter-spacing: 1px;
-}
-
-.content-wrapper {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 30px;
 }
 
 footer {
@@ -45,13 +50,33 @@ footer > p {
   font-size: 18px;
 }
 
+/* Full Page */
+.full-page {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
 /* Collection */
 .collection {
-  margin-top: 50px;
+  margin: 60px 0 30px 0;
+  text-align: center;
 }
 
 .collection-gallery {
   display: inline-table;
+  width: 100%;
+  text-align: center;
 }
 
 .collection-item {
@@ -64,6 +89,7 @@ footer > p {
   border-radius: 3px;
 }
 
+
 .image-thumbnail {
   width: 350px;
   height: 240px;
@@ -75,11 +101,32 @@ footer > p {
   text-align: center;
 }
 
+/* Footer */
+.footer-container {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-content {
+  padding: 20px 0 80px 0;
+}
+
+.footer-content,
+.footer-content a {
+  font-size: 24px;
+  color: #7c7c7c;
+}
+
+/* Background */
+.bg-texture {
+  background: url('../img/bg/cream_pixels.png');
+}
 
 /* Responsive */
 @media(max-width: 1150px) {
-  .content-wrapper {
-    width: 90%;
+  .container {
+    width: 80%;
   }
 }
 
@@ -91,20 +138,17 @@ footer > p {
 }
 
 @media(max-width: 640px) {
-  .content-wrapper {
-    width: 80%;
-  }
-  p, a {
-    font-size: 18px;
-  }
-  body {
-    text-align: center;
-  }
+  body {text-align: center;}
+  h2 {margin: 0 0 50px 0;}
+  p, a {font-size: 17px;}
   .explanation {
     text-align: justify;
   }
   .collection-item {
     display: inline-block;
     padding: 15px 0 15px 0;
+  }
+  .footer-container {
+    width: 80%;
   }
 }

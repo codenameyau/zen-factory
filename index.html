@@ -5,7 +5,7 @@
   <title>Zen Factory - Playing with CSS</title>
 
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,57 +19,77 @@
 </head>
 
 <body>
-  <div class="content-wrapper">
 
-    <h1 class="welcome">Welcome to Zen Factory</h1>
-    <h2 class="tagline">By Jorge Yau</h2>
+  <!-- Page: Introduction -->
+  <div class="full-page bg-texture">
+    <div class="wrapper">
+    <div class="container">
+      <h1 class="welcome">Welcome to Zen Factory</h1>
+      <h2 class="tagline">By Jorge Yau</h2>
 
-    <h3 class="intro">What is Zen Factory?</h3>
-    <p class="explanation">
-      Zen factory is a collection of hand-coded responsive designs for
-      <a href="http://www.csszengarden.com/" target="_blank">CSS Zen Garden</a>,
-      which is a website that showcases the power and versatility of CSS.
-      You can find the source code for Zen Factory and my designs at
-      <a href="https://github.com/codenameyau/zen-factory" target="_blank">GitHub</a>.
-    </p>
+      <h3 class="intro">What is Zen Factory?</h3>
+      <p class="explanation">
+        Zen factory is a collection of hand-coded responsive designs for
+        <a href="http://www.csszengarden.com/" target="_blank">CSS Zen Garden</a>,
+        which is a website that showcases the power and versatility of CSS.
+        You can find the source code for Zen Factory and my designs at
+        <a href="https://github.com/codenameyau/zen-factory" target="_blank">GitHub</a>.
+      </p>
+    </div>
+    </div>
+  </div>
+  <!-- End: Introduction -->
 
-    <h3 class="collection">The Collection</h3>
 
-    <div class="collection-gallery">
+  <!-- Page: Collection -->
+  <div class="full-page">
+    <div class="wrapper">
+    <div class="container">
 
-      <!-- Collection: Modern UX -->
-      <div class="collection-item">
-        <div class="item-image">
-          <a href="modern-ux">
-          <img class="image-thumbnail" src="assets/img/modern-ux.jpg">
-          </a>
+      <h2 class="collection">The Collection</h2>
+      <div class="collection-gallery">
+
+        <!-- Collection: Modern UX -->
+        <div class="collection-item">
+          <div class="item-image">
+            <a href="modern-ux">
+            <img class="image-thumbnail" src="assets/img/modern-ux.jpg">
+            </a>
+          </div>
+          <div class="item-name">
+            <a href="modern-ux">Modern UX</a>
+          </div>
         </div>
-        <div class="item-name">
-          <a href="modern-ux">Modern UX</a>
-        </div>
-      </div>
 
 
-      <!-- Collection: Futuristic -->
-      <div class="collection-item">
-        <div class="item-image">
-          <a href="#">
-          <img class="image-thumbnail" src="">
-          </a>
+        <!-- Collection: Futuristic -->
+        <div class="collection-item">
+          <div class="item-image">
+            <a href="#">
+            <img class="image-thumbnail" src="">
+            </a>
+          </div>
+          <div class="item-name">
+            <a href="#">Coming Soon</a>
+          </div>
         </div>
-        <div class="item-name">
-          <a href="#">Coming Soon</a>
-        </div>
+
       </div>
 
     </div>
-
-    <footer>
-      <p>
-        &copy; 2014 Jorge Yau
-      </p>
-    </footer>
-
+    </div>
   </div>
+  <!-- End: Collection -->
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        &copy; 2014 <a href="codenameyau.github.io">Jorge Yau</a>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 </html>
