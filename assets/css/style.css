@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,8 +15,8 @@ h1, h2, h3 {
   letter-spacing: 2px;
 }
 
-.content-wrapper > h3 {
-  margin-top: 40px;
+h2 {
+  margin: 0 0 80px 0;
 }
 
 a {
@@ -27,12 +32,7 @@ a:hover {
 p, a {
   font-size: 21px;
   letter-spacing: 1px;
-}
-
-.content-wrapper {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 30px;
 }
 
 footer {
@@ -50,6 +50,16 @@ footer > p {
   display: table;
   height: 100%;
   width: 100%;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
 }
 
 /* Collection */
@@ -85,7 +95,7 @@ footer > p {
 
 /* Responsive */
 @media(max-width: 1150px) {
-  .content-wrapper {
+  .container {
     width: 90%;
   }
 }
@@ -98,15 +108,10 @@ footer > p {
 }
 
 @media(max-width: 640px) {
-  .content-wrapper {
-    width: 80%;
-  }
-  p, a {
-    font-size: 18px;
-  }
-  body {
-    text-align: center;
-  }
+  body {text-align: center;}
+  h2 {margin: 0 0 50px 0;}
+  p, a {font-size: 17px;}
+  .container {width: 80%;}
   .explanation {
     text-align: justify;
   }
