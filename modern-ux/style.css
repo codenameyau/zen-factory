@@ -137,7 +137,7 @@ nav > ul > li {
   color: #333333;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   display: table;
 }
@@ -276,10 +276,12 @@ footer a {
   }
 
   .design-selection > .select {
+    background: rgba(90,90,90,0.5);
     opacity: 0.9;
     text-align: center;
     color: #fafafa;
-    padding: 40px 0 0 0;
+    padding: 35px 0 30px 0;
+    margin: 0;
   }
 
   .design-selection > nav,
@@ -287,15 +289,17 @@ footer a {
     opacity: 0.85;
     position: inherit;
     display: list-item;
-    padding: 5px;
+    padding: 20px 0 20px 0;
   }
 
   .design-selection > nav a,
-  .design-selection > nav p {
+  .design-selection > nav p,
+  .design-archives > nav a {
     color: #fafafa;
   }
 
   nav > ul {
+    padding-left: 30px;
     text-align: center;
   }
 
@@ -319,13 +323,27 @@ footer a {
   .design-archives > .archives {
     display: none;
   }
-
   .design-archives > nav {
     background: rgba(0,0,0,0.8);
   }
+  .design-archives > nav a {
+    font-family: 'Ek Mukta', sans-serif;
+  }
+  .design-archives > nav > ul > li {
+    display: inline;
+  }
+  .view-all {
+    float: left;
+  }
+  .next {
+    float: right;
+    margin-right: 25px;
+  }
 
   /* Resources */
-
+  .zen-resources {
+    display: none;
+  }
 }
 
 
@@ -378,6 +396,5 @@ footer a {
   .design-name {
     font-size: 14px;
   }
-
 
 }
