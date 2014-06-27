@@ -26,12 +26,11 @@ a:hover {
 
 p, a {
   font-size: 21px;
-  font-weight: 300;
   letter-spacing: 1px;
 }
 
 .content-wrapper {
-  width: 65%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,17 +51,34 @@ footer > p {
 }
 
 .collection-item {
-  display: inline;
-  padding: 20px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.item-image {
+  border: 1px #dadada solid;
+  border-radius: 3px;
+}
+
+.image-thumbnail {
+  width: 350px;
+  height: 240px;
+  margin: 4px 4px 0px 4px;
 }
 
 .item-name {
+  margin-top: 10px;
   text-align: center;
 }
+
 
 /* Responsive */
 @media(max-width: 786px) {
   .content-wrapper {
     width: 80%;
+  }
+  .image-thumbnail {
+    width: 250px;
+    height: 160px;
   }
 }
