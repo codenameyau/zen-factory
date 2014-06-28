@@ -99,6 +99,11 @@ footer > p {
 .item-name {
   margin-top: 10px;
   text-align: center;
+  letter-spacing: 2px;
+}
+
+.item-name a {
+  font-size: 20px;
 }
 
 /* Footer */
