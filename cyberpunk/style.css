@@ -7,4 +7,21 @@
    designer's written permission. However, feel free to study the CSS and use
    techniques you learn from it elsewhere. */
 
+/* Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Play);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300);
+
 /* basic elements */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Play', sans-serif;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
